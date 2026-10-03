@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 05 - ES6 & Async JS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .output-box {
+      background-color: #f8f9fa;
+      border-left: 4px solid #0d6efd;
+      padding: 12px;
+      margin-top: 10px;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <div class="container my-5">
+    <h1 class="mb-4 text-center"></h1>
+
+    <section class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h4 class="m-0">University Course Enrollment Manager</h4>
+      </div>
+      <div class="card-body">
+        <div id="task1-output"></div>
+      </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+      <div class="card-header bg-success text-white">
+        <h4 class="m-0">Student Utility Module</h4>
+      </div>
+      <div class="card-body">
+        <h5 id="task2-dept" class="text-secondary fw-bold"></h5>
+        <div id="task2-cards" class="row g-3 mt-2"></div>
+      </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+      <div class="card-header bg-warning text-dark">
+        <h4 class="m-0">Online Examination Workflow</h4>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <button id="btn-valid-workflow" class="btn btn-warning me-2">Test Valid Roll Number</button>
+          <button id="btn-invalid-workflow" class="btn btn-outline-danger">Test Empty Roll Number</button>
+        </div>
+        <div id="task3-output" class="output-box">Click a button above to run workflow test...</div>
+      </div>
+    </section>
+
+    <section class="card mb-4 shadow-sm">
+      <div class="card-header bg-info text-white">
+        <h4 class="m-0">University Result Portal</h4>
+      </div>
+      <div class="card-body">
+        <div class="row g-2 mb-3">
+          <div class="col-auto">
+            <input type="text" id="search-roll" class="form-control" placeholder="Enter Roll No (e.g. BSCS-001)">
+          </div>
+          <div class="col-auto">
+            <button id="btn-search-then" class="btn btn-outline-primary">Search (Promise .then)</button>
+            <button id="btn-search-async" class="btn btn-primary">Search (Async/Await)</button>
+            <button id="btn-load-all" class="btn btn-success">Load All Results</button>
+          </div>
+        </div>
+        
+        <div id="task4-output" class="output-box">Results will be displayed here...</div>
+        <div id="task4-cards" class="row g-3 mt-2"></div>
+        <div id="task4-stats" class="mt-3"></div>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="lab05.js"></script>
+</body>
+</html>
